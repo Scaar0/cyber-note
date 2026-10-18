@@ -10,4 +10,4 @@ Je m'entraîne sur des plateformes gratuites pour acquérir de bonnes bases en c
 
 ## Profils
 - TryHackMe : https://tryhackme.com/p/Scaar0
-- Root-Me : (à ajouter)
+- Root-Me : https://www.root-me.org/Scaar0
