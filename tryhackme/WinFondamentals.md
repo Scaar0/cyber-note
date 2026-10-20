@@ -42,48 +42,42 @@ Comment un attaquant pourrait-il utiliser ces connaissances à des fins malveill
 
 ## Windows Fundamentals 2
 
-Plateforme : TryHackMe (parcours : [nom du parcours])
-Date : jj/mm/aaaa
+Plateforme : TryHackMe (parcours : Windows Fundamentals 2)
+Date : 19/10/2026
 Difficulté : facile
-Durée : [environ X min]
+Durée : 15 min
 
 ### Objectif
-[Une phrase : ce que la salle t'apprend.]
+Découvrir la configuration du système (msconfig) et les outils qu'elle offre.
 
 ### Notions clés
-- [Notion 1, avec tes mots]
-- [Notion 2]
-- [Notion 3]
+- Comment utiliser la configuration du système (System Configuration)
+- A quoi servent les outils porposé dans msconfig: UAC, Registre, CMD etc...
 
 ### Outils et emplacements à connaître
-| Outil | À quoi ça sert | Ce que j'y ai trouvé ou testé |
-|---|---|---|
-| [Configuration du système (msconfig)] | [...] | [...] |
-| [Contrôle de compte utilisateur (UAC)] | [...] | [...] |
-| [Gestion de l'ordinateur] | [...] | [...] |
-| [Informations système (msinfo32)] | [...] | [...] |
-| [Moniteur de ressources] | [...] | [...] |
-| [Invite de commandes] | [...] | [...] |
-| [Éditeur du Registre (regedit)] | [...] | [...] |
+| Outil | À quoi ça sert |
+|---|---|
+| Configuration du système (msconfig) | Donne accès à de nombreux outils de configuration de Windows |
 
 ### Commandes utilisées
-- `[commande]` : [ce qu'elle fait]
-- `[commande]` : [ce qu'elle fait]
-
-### Le Registre en une phrase
-[Explique avec tes mots ce qu'est le Registre Windows et à quoi sert chacune de ses grandes ruches que tu as vues.]
+- `winver.exe` : ouvre les informations sur la version de Windows
+- `resmon.exe` : ouvre l'outil qui permet de visualiser les performances et l'usage des ressources de l'ordinateur local
+- `UserAccountControlSettings.exe` : ouvre les paramètres de l'UAC
+- `compmgmt.msc` : ouvre l'outil pour visualiser et configurer les paramètres du système et de ses composants
+- `cmd.exe` : ouvre l'invite de commandes de Windows
+- `regedt32.exe` : ouvre l'outil permettant de modifier le registre Windows
 
 ### Lien avec la cybersécurité
-[Pourquoi ces outils comptent. Par exemple : où un programme malveillant peut se cacher pour démarrer avec la machine, où regarder les journaux d'événements, comment repérer un processus suspect.]
+Sert à savoir où se trouvent les outils utiles et cruciaux pour des modifications importantes de la configuration de Windows. msconfig contrôle le démarrage, le Registre peut contrôler démarrage automatique et les stratégies/paramètres stratégiques Windows, la Gestion de l’ordinateur gère services/tâches planifiées et comptes, et UAC contrôle l’autorisation d’élévation. Pour un attaquant, c’est de la persistance et de l’escalade/privilèges ; pour un défenseur, c’est de l’audit, du durcissement et de la détection.
 
 ### Comparaison avec Linux
-[Équivalents que tu connais : services, cron, journaux dans /var/log, terminal, fichiers de configuration. Quelle est la différence principale avec le Registre ?]
+cmd.exe est l'équivalent du terminal Linux. Il y a de nombreuses commandes et cela permet d'utiliser Windows en ligne de commande (CLI).
 
-### Ce qui m'a bloqué ou surpris
-[Une ou deux lignes.]
+### Ce qui m'a bloqué
+N/A
 
 ### À retenir
-[Une phrase de conclusion.]
+System Configuration (msconfig) centralise de nombreux outils importants.
 
 ### Pour aller plus loin
-[Une question que tu te poses encore.]
+Comment utiliser le registre en toute sécurité ?
