@@ -6,7 +6,6 @@ Je m'entraîne sur des plateformes gratuites pour acquérir de bonnes bases en c
 ## Ce que contient ce dépôt
 - `tryhackme/` : notes sur les salles que j'ai faites
 - `root-me/` : notes sur les défis
-- `overthewire/` : notes sur les niveaux Bandit
 
 ## Profils
 - TryHackMe : https://tryhackme.com/p/Scaar0
